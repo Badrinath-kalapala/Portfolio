@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Badrinath Kalapala | Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  <script defer src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <meta name="description" content="Badrinath Kalapala - Full Stack Developer Portfolio showcasing projects, experience, and skills in React, Node.js, MongoDB, and more." />
+
+</head>
+<body>
+
+<header class="navbar">
+  <div class="logo-container">
+    <div id="navbarProfileWrapper" class="navbar-profile-wrapper">
+      <div class="background-glow"></div> <!-- Glow effect -->
+      <img src="./Image/profile.png" alt="Mini Profile" id="navbarProfileImage" class="navbar-profile-img" />
+    </div>
+   <div class="logo" id="siteLogo">Badrinath Kalapala</div>
+  </div>
+
+  <!-- Sidebar Toggle -->
+  <div id="burger" class="burger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  </header>
+
+<!-- Sidebar Navigation -->
+<nav class="sidebar" id="sidebar">
+  <div class = "close-btn" id = "close-btn">&times;</div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+
+
+  <section id="home" class="hero-section">
+    <div class="hero-flex"></div>
+    <div class="hero-content">
+      <h1>Hi, I’m Badrinath 👋</h1>
+      <p class="intro">
+        CSE grad building web apps with React, Node.js & MongoDB | DSA Enthusiast | Full Stack Developer
+      </p>
+      <div class="cta-buttons">
+        <a href="#projects" class="btn">View Portfolio</a>
+        <a href="resume.pdf" class="btn secondary" download>Download Resume</a>
+        <a href="#contact" class="btn">Contact Me</a>
+      </div>
+    </div>
+    <div class="profile-container" id="heroProfileContainer">
+      <div class="background-glow"></div>
+      <img src="./Image/profile.png" alt="Profile Picture" class="profile-img" id="profileImage" />
+      
+    </div>
+
+  </section>
+
+
+  <section id="about" class="section">
+    <h2>About Me</h2>
+    <p>
+      I’m Badrinath Kalapala, a passionate Computer Science graduate who loves building full stack web apps that solve real-world problems.
+      With strong skills in JavaScript, React, and MongoDB, I enjoy transforming ideas into fully functional digital solutions.
+      I’m also a university-level basketball team captain, bringing leadership and dedication to everything I do.
+    </p>
+    <br>
+    <div class="education">
+      <h3>Education</h3>
+      <ul>
+        <li><strong>B.Tech in CSE</strong> (2021–2025), JNTU Kakinada — CGPA: 8.35/10</li>
+        <li><strong>Intermediate Education</strong> (2019–2021), Parvathaneni Brahmayya Siddhartha College — 86%</li>
+        <li><strong>Secondary Education</strong> (2019), M.K Gandhi Public School — CGPA: 9.0/10</li>     
+      </ul>
+      <br>
+      <h3>Key Achievements</h3>
+      <ul>
+        <li>University-level Basketball Team Captain</li>
+        <li>Multiple real-world project completions</li>
+      </ul>
+    </div>
+  </section>
+
+<section id="skills" class="skills-section">
+  <h2 class="section-title">Skills</h2>
+
+  <div class="skills-card-grid">
+    <!-- 🧠 Languages -->
+    <div class="skill-card"><img src="Image/python.png" alt="Python"><p>Python</p></div>
+    <div class="skill-card"><img src="Image/java.png" alt="Java"><p>Java</p></div>
+    <div class="skill-card"><img src="Image/c.png" alt="C"><p>C</p></div>
+    <div class="skill-card"><img src="Image/cpp.png" alt="C++"><p>C++</p></div>
+
+    <!-- 🌍 Frontend -->
+    <div class="skill-card"><img src="Image/html.png" alt="HTML"><p>HTML</p></div>
+    <div class="skill-card"><img src="Image/css.png" alt="CSS"><p>CSS</p></div>
+    <div class="skill-card"><img src="Image/javascript.png" alt="JavaScript"><p>JavaScript</p></div>
+    <div class="skill-card"><img src="Image/reactjs.png" alt="React"><p>React</p></div>
+    <div class="skill-card"><img src="Image/tailwindcss.png" alt="Tailwind"><p>Tailwind</p></div>
+
+    <!-- ⚙️ Backend -->
+    <div class="skill-card"><img src="Image/node-js.png" alt="Node.js"><p>Node.js</p></div>
+    <div class="skill-card"><img src="Image/Express-js.png" alt="Express,js"><p>Express</p></div>
+
+    <!-- 💾 Database -->
+    <div class="skill-card"><img src="Image/mc.png" alt="MongoDB"><p>MongoDB</p></div>
+    <div class="skill-card"><img src="Image/mysql.png" alt="MySQL"><p>MySQL</p></div>
+
+    <!-- 🧰 Tools -->
+    <div class="skill-card"><img src="Image/git.png" alt="Git"><p>Git</p></div>
+    <div class="skill-card"><img src="Image/github.png" alt="GitHub"><p>GitHub</p></div>
+    <div class="skill-card"><img src="Image/vscode.png" alt="VS Code"><p>VS Code</p></div>
+    <div class="skill-card"><img src="Image/jupyter-seeklogo.png" alt="Jupyter"><p>Jupyter</p></div>
+    <div class="skill-card"><img src="Image/VirtualBox_2024_Logo.svg.png" alt="VirtualBox"><p>VirtualBox</p></div>
+  </div>
+</section>
+
+
+
+
+
+  <section id="services" class="section">
+    <h2>Services</h2>
+    <div class="card-grid">
+      <div class="card">Full Stack Web Development</div>
+      <div class="card">Frontend UI Development</div>
+      <div class="card">Backend/API Integration</div>
+      <div class="card">Project Deployment</div>
+      <div class="card">DSA Mentorship</div>
+      <div class="card">Chatbot Development</div>
+    </div>
+  </section>
+
+  <section id="projects" class="section">
+    <h2>Projects</h2>
+    <div class="card-grid">
+      <div class="card">
+        <h3>E-Commerce Website</h3>
+        <p>Full stack app built with React, Node.js, MongoDB</p>
+      </div>
+      <div class="card">
+        <h3>Traffic Severity Prediction</h3>
+        <p>Hybrid ML + CNN model (RFCNN)</p>
+      </div>
+      <div class="card">
+        <h3>AgrigroW Platform</h3>
+        <p>Farmer information and support system</p>
+      </div>
+      <div class="card">
+        <h3>Medical Chatbot</h3>
+        <p>Python-based ML chatbot for Telegram</p>
+      </div>
+      <div class="card">
+        <h3>YOLOv4 Face Recognition</h3>
+        <p>Real-time face detection for security</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience" class="section">
+    <h2>Experience</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <h3>Data Science Intern @ Skilldzire</h3>
+        <span>May – July 2025</span>
+        <ul>
+          <li>Assisted in Data Cleaning and Preprocessing</li>
+          <li>Supported in Model Development and Evaluation</li>
+        </ul>
+      </div>
+      <div class="timeline-item">
+        <h3>Java Full Stack Intern @ Data Valley</h3>
+        <span>May – July 2024</span>
+        <ul>
+          <li>Worked with Java, Spring Boot, MongoDB</li>
+          <li>Followed agile methodology in sprints</li>
+        </ul>
+      </div>
+      <div class="timeline-item">
+        <h3>Machine Learning Intern @ Indian Servers</h3>
+        <span>May – July 2023</span>
+        <ul>
+          <li>Created Seamless interactions for users, Enhanced User Experience.</li>
+          <li>Developed and deployed a Medical Health chatbot integrated with Telegram</li>
+        </ul>
+      </div>
+      <div class="timeline-item">
+        <h3>Hackathon Participant @ Yoursthatsenior</h3>
+        <span>July 2024</span>
+        <ul>
+          <li>Built collaborative projects under time pressure</li>
+          <li>Practiced teamwork and problem solving</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <h2>Contact Me</h2>
+    <form class="contact-form" method="post">
+      <input type="text" name="user_name" placeholder="Name" required />
+      <input type="email" name="user_email" placeholder="Email" required />
+      <textarea name="message" placeholder="Your Message"></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <div class="contact-info">
+      <p>📧 badrinathkalapala@gmail.com</p>
+      <p>💼 <a href="https://www.linkedin.com/in/badrinath-kalapala-01025225b/" target="_blank">LinkedIn</a></p>
+      <p>💻 <a href="https://github.com/Badrinath-kalapala" target="_blank">GitHub</a></p>
+      <p>📍 Vijayawada, Andhra Pradesh, India</p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2025 Badrinath Kalapala. All rights reserved.</p>
+  </footer>
+</body>
+</html>
